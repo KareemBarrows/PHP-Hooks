@@ -1,6 +1,6 @@
 <?php
 /**
- * PHP Hooks Class
+**!PHP Hooks Class
  *
  * The PHP Hooks Class is a fork of the WordPress filters hook system rolled in to a class to be ported 
  * into any php based system
@@ -24,7 +24,7 @@
  *
  * @package PHP Hooks
  */
-if (!class_exists('Hooks')){
+if ( class_exists('Hooks')){
   /**
   * Hooks
   */
@@ -561,4 +561,4 @@ if (!class_exists('Hooks')){
 }//end if
 global $hooks;
 $hooks = new Hooks();
-$hooks->do_action('After_Hooks_Setup',$hooks);
+$hooks->do_action('After_Hooks_Setup',$hooks); 
